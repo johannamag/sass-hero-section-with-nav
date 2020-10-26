@@ -27,6 +27,7 @@
   padding: 1rem 0.5rem;
   z-index: 10;
   position: relative;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .navbar__logo {
@@ -93,5 +94,140 @@
   background: #e32145;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.hero {
+  background-color: #f7f7f7;
+}
+
+.hero__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.hero__container--left {
+  width: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container--left {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container--left {
+    line-height: 1.5;
+  }
+}
+
+.hero__container--left h1 {
+  font-size: 4rem;
+  color: #e32145;
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container--left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero__container--left h2 {
+  font-size: 4rem;
+  color: #302e44;
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container--left h2 {
+    font-size: 2rem;
+  }
+}
+
+.hero__container--left p {
+  font-size: 2rem;
+  color: #302e44;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container--left p {
+    font-size: 1.5rem;
+  }
+}
+
+.hero__container--button {
+  font-size: 1rem;
+  background-color: #e1486d;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #e4e4e4;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.hero__container--button a {
+  position: relative;
+  z-index: 2;
+  color: #e4e4e4;
+  text-decoration: none;
+}
+
+.hero__container--button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #302e44;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.hero__container--button:hover:after {
+  width: 100%;
+}
+
+.hero__container--right {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__container--img {
+  height: 100%;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
